@@ -12,7 +12,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
-public class MyBackgroundService  extends Service {
+public class MyBackgroundServiceRabbitMQ  extends Service {
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {

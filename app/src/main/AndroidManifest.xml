@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:enabled="true" android:name="com.example.myapplication.MyBackgroundService" />
+        <!--        <service android:enabled="true" android:name="com.example.myapplication.MyBackgroundServiceRabbitMQ" />-->
+                <service android:enabled="true" android:name="com.example.myapplication.MyBackgroundServiceMQTT" />
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
