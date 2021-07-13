@@ -38,7 +38,13 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
 
+        /**
+         * Enable the MyBackgroundServiceRabbitMQ.class for testing Rabbit MQ
+         * and seee the Locat of verbose "my-tag"
+         */
+//        startService(new Intent(this, MyBackgroundServiceRabbitMQ.class));
         startService(new Intent(this, MyBackgroundServiceMQTT.class));
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
